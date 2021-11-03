@@ -184,14 +184,14 @@ body {
         bottom: 0;
     }
     .recherche {
-        position: relative;
+        position: absolute;
         margin-bottom: -40px;
-        margin-left: 150px;
+        left: 50px;
     }
     .btnRecherche {
-        position: relative;
+        position: absolute;
         margin-bottom: -40px;
-        margin-left: 150px;
+        left: 110px;
     }
 }
 
