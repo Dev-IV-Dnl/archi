@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Font Awesome-->
+	<link rel="stylesheet" href=" https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css">
+    <!--mon CSS-->
     <link rel="stylesheet" href="./css/menuBurger.css">
+    <!--JS Jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
-    <script src="./js/menuBurger.js" defer></script>
+    <!--Mon JS-->
+    <script src="./js/index.js" defer></script>
     <title>Menu Burger JS</title>
 </head>
 <body>
@@ -24,7 +29,8 @@
             <a class="nav" href="#">Actualité</a>
             <a class="nav" href="#">Contact</a>
         </div>
-        <input class="recherche" type="text" autofocus>
+        <button id="btnRecherche" class="btnRecherche"><i class="fas fa-search"></i></button>
+        <input id="recherche" class="rechercheOff" type="text">
     </header>
 </body>
 </html>

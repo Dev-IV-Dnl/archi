@@ -28,3 +28,18 @@ burgerMenu.addEventListener("click", () => {
         ligne3Burger.style.transform = "translate(4px, 0px) rotate(-40deg)";
     }
 })
+
+
+
+//event click pour faire apparaître l'input recherche :
+let btnRecherche = document.querySelector("#btnRecherche");
+let recherche = document.querySelector("#recherche");
+
+btnRecherche.addEventListener("click", (e)=>{
+    if(btnRecherche.classList == "btnRecherche") {
+        recherche.classList.remove("rechercheOff");
+        recherche.classList.add("recherche");
+        recherche.setAttribute('autofocus', 'autofocus');
+        e.stopPropagation();
+    }
+})

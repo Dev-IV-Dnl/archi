@@ -17,16 +17,38 @@ body {
     height: 100px;
     
 }
+.btnRecherche {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 120px;
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+    transition: linear 0.2s;
+}
+.btnRecherche:hover {
+    cursor: pointer;
+    background-color: var(--col1);
+    color: var(--col2);
+}
+.btnRechercheOff {
+    display: none;
+}
+
 .recherche {
     z-index: 50;
     position: absolute;
     right: 70px;
-    width: 100px;
-    height: 25px;
+    width: 150px;
+    height: 40px;
     color: var(--col1);
     border: solid 2px var(--col1);
     border-radius: 5px;
     transition: linear 0.1s;
+}
+.rechercheOff {
+    display: none;
 }
 .recherche:focus {
     background-color: var(--col1);
@@ -116,7 +138,7 @@ body {
     }
     #menuDown {
         position: fixed;
-        top: -240px;
+        top: -245px;
         left: 0;
         height: 100px !important;
         display: flex;
@@ -162,6 +184,11 @@ body {
         bottom: 0;
     }
     .recherche {
+        position: relative;
+        margin-bottom: -40px;
+        margin-left: 150px;
+    }
+    .btnRecherche {
         position: relative;
         margin-bottom: -40px;
         margin-left: 150px;
