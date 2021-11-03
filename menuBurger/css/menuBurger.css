@@ -29,7 +29,7 @@
     cursor: pointer;
 }
 
-.ligne1 {
+.ligne1Burger {
     width: 80%;
     height: 10%;
     margin-bottom: 4px;
@@ -37,7 +37,7 @@
     background-color: var(--col1);
     transition: linear 0.3s;
 }
-.ligne2 {
+.ligne2Burger {
     width: 80%;
     height: 10%;
     margin-top: 2px;
@@ -45,7 +45,7 @@
     background-color: var(--col1);
     transition: linear 0.3s;
 }
-.ligne3 {
+.ligne3Burger {
     width: 80%;
     height: 10%;
     margin-top: 4px;
