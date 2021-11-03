@@ -36,10 +36,10 @@
 .divImg {
     width: 100%;
     height: 300px;
-    transition: linear 0.2s;
     overflow: hidden;
     border-radius: 2px;
-    box-shadow: 0 0 5px var(--col1);
+    box-shadow: 0 0 3px var(--col1);
+    transition: linear 0.2s;
     /* background-image: url(../img/img-test-archi.jpg);
     background-size: cover;
     background-position: center; */

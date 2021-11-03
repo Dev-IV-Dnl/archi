@@ -1,0 +1,91 @@
+:root {
+    --col1: #333;
+    --col2: #F1F1F1;
+}
+
+/* HEADER */
+
+/* .header {
+    width: 100%;
+    height: 80px;
+    border: 1px solid var(--col1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.iconeMenuBurger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--col1);
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.iconeMenuBurger:hover {
+    cursor: pointer;
+}
+
+.ligne1 {
+    width: 80%;
+    height: 10%;
+    margin-bottom: 4px;
+    transform-origin: left;
+    background-color: var(--col1);
+    transition: linear 0.3s;
+}
+.ligne2 {
+    width: 80%;
+    height: 10%;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    background-color: var(--col1);
+    transition: linear 0.3s;
+}
+.ligne3 {
+    width: 80%;
+    height: 10%;
+    margin-top: 4px;
+    transform-origin: left;
+    background-color: var(--col1);
+    transition: linear 0.3s;
+}
+
+#menuDown {
+    position: absolute;
+    margin-top: 5px;
+    display: flex;
+    width: 100px;
+    border: 1px solid var(--col1);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: linear 0.3s;
+}
+#menuDown a {
+    margin-left: 5px;
+}
+
+@media screen and (min-width:1400px) {
+    #iconeMenuBurger {
+        display: none;
+    }
+    #menuDown {
+        height: 50px !important;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        /* border: 1px solid var(--col1) !important; */
+        align-items: center;
+        border-radius: 5px;
+        transition: linear 0.2s;
+        flex-direction: row;
+    }
+}
+
+/* FIN HEADER */
