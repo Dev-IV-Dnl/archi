@@ -1,31 +1,61 @@
+
+:root {
+    --col1:#333;
+    --col2:#F1F1F1;
+    --col3: transparent;
+}
+
 .tousProjets {
     width: 100%;
     height: 100vh;
 }
 .conteneurProjets {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
     width: 100%;
     height: 100%;
 }
 
 .card {
+    margin-top: 50px;
     position: relative;
     width: 300px;
     height: 370px;
+    transition: linear 0.1s;
     /* border: 1px solid black; */
+}
+/* .card:hover {
+    transform: scale(1);
+} */
+
+.lienCard {
+    text-decoration: none;
+    color: black;
 }
 
 .divImg {
     width: 100%;
     height: 300px;
+    transition: linear 0.5s;
+    overflow: hidden;
+    box-shadow: 0 0 5px var(--col1);
     /* background-image: url(../img/img-test-archi.jpg);
     background-size: cover;
     background-position: center; */
+}
+.divImg:hover {
+    transform: scale(1.03);
 }
 
 .imgCard {
     height: 300px;
     width: 100%;
     object-fit: cover;
+    transition: transform 0.5s;
+}
+.imgCard:hover {
+    transform: scale(1.07);
 }
 
 .divInfos {
