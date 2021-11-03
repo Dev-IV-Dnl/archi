@@ -92,7 +92,7 @@ body {
     justify-content: space-around;
     border-radius: 5px;
     overflow: hidden;
-    transition: linear 0.1s;
+    /* transition: linear 0.05s; */
 }
 .nav {
     margin-left: 5px;
