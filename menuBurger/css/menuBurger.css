@@ -1,18 +1,40 @@
 :root {
     --col1: #333;
     --col2: #F1F1F1;
+    --col3: transparent;
+}
+body {
+    position: relative;
+    background-color: var(--col2);
 }
 
 /* HEADER */
-
-/* .header {
-    width: 100%;
-    height: 80px;
-    border: 1px solid var(--col1);
+.header {
+    position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-} */
+    width: 100%;
+    height: 100px;
+    
+}
+.recherche {
+    position: absolute;
+    right: 70px;
+    width: 100px;
+    height: 25px;
+    color: var(--col1);
+    border: solid 2px var(--col1);
+    border-radius: 5px;
+    transition: linear 0.1s;
+}
+.recherche:focus {
+    background-color: var(--col1);
+    color: var(--col2);
+}
+.recherche:hover {
+    background-color: var(--col1);
+    color: var(--col2);
+}
 
 .iconeMenuBurger {
     display: flex;
@@ -21,12 +43,14 @@
     flex-direction: column;
     width: 40px;
     height: 40px;
-    border: 3px solid var(--col1);
     border-radius: 5px;
     margin-right: 20px;
+    transition: linear 0.2s;
 }
 .iconeMenuBurger:hover {
     cursor: pointer;
+    transform: scale(1.2) rotate(-2deg);
+
 }
 
 .ligne1Burger {
@@ -35,7 +59,8 @@
     margin-bottom: 4px;
     transform-origin: left;
     background-color: var(--col1);
-    transition: linear 0.3s;
+    transition: linear 0.1s;
+    border-radius: 50px;
 }
 .ligne2Burger {
     width: 80%;
@@ -43,7 +68,7 @@
     margin-top: 2px;
     margin-bottom: 3px;
     background-color: var(--col1);
-    transition: linear 0.3s;
+    border-radius: 50px;
 }
 .ligne3Burger {
     width: 80%;
@@ -51,40 +76,94 @@
     margin-top: 4px;
     transform-origin: left;
     background-color: var(--col1);
-    transition: linear 0.3s;
+    transition: linear 0.1s;
+    border-radius: 50px;
 }
 
 #menuDown {
-    position: absolute;
-    margin-top: 5px;
+    position: fixed;
+    margin-top: 250px;
     display: flex;
-    width: 100px;
+    width: 120px;
     border: 1px solid var(--col1);
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
     border-radius: 5px;
     overflow: hidden;
-    transition: linear 0.3s;
+    transition: linear 0.1s;
 }
-#menuDown a {
+.nav {
     margin-left: 5px;
+    text-decoration: none;
+    color: var(--col1);
+    font-family: fantasy;
+    font-size: 20px;
+    text-shadow: 0 0 0px var(--col1);
+    transition: linear 0.2s;
+}
+.nav:hover {
+    font-family: fantasy;
+    text-shadow: 0 0 1px var(--col1);
+    transform: scale(1.3) translateX(10px);
+    text-decoration: underline;
 }
 
-@media screen and (min-width:1400px) {
+@media screen and (min-width:1024px) {
     #iconeMenuBurger {
         display: none;
     }
     #menuDown {
-        height: 50px !important;
+        position: fixed;
+        top: -240px;
+        left: 0;
+        height: 100px !important;
         display: flex;
-        justify-content: space-around;
-        width: 100%;
+        width: 80%;
         /* border: 1px solid var(--col1) !important; */
         align-items: center;
         border-radius: 5px;
         transition: linear 0.2s;
         flex-direction: row;
+    }
+    .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--col1);
+        transition: linear 0.3s;
+        width: 150px;
+        height: 50px;
+        background-color: var(--col2);
+        border-radius: 3px;
+        font-size: 2rem;
+    }
+    .nav:hover {
+        transform: translate(0);
+        text-decoration: none;
+        background-color: var(--col1);
+        color: var(--col2);
+    }
+}
+
+@media  screen and (max-width:767px) {
+    #menuDown {
+        right: -10px;
+        bottom: 50px;
+    }
+    .iconeMenuBurger {
+        position: fixed;
+        bottom: 10px;
+        right: 0;
+    }
+    .header {
+        position: fixed;
+        bottom: 0;
+    }
+    .recherche {
+        position: relative;
+        margin-bottom: -40px;
+        margin-left: 150px;
     }
 }
 
