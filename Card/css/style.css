@@ -25,9 +25,9 @@
     transition: linear 0.1s;
     /* border: 1px solid black; */
 }
-/* .card:hover {
+.card:hover {
     transform: scale(1);
-} */
+}
 
 .lienCard {
     text-decoration: none;
@@ -37,25 +37,26 @@
 .divImg {
     width: 100%;
     height: 300px;
-    transition: linear 0.5s;
+    transition: transform 0.2s;
     overflow: hidden;
     box-shadow: 0 0 5px var(--col1);
+    border-radius: 3px;
     /* background-image: url(../img/img-test-archi.jpg);
     background-size: cover;
     background-position: center; */
 }
 .divImg:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .imgCard {
     height: 300px;
     width: 100%;
     object-fit: cover;
-    transition: transform 0.5s;
+    transition: transform 1s;
 }
 .imgCard:hover {
-    transform: scale(1.07);
+    transform: scale(1.1);
 }
 
 .divInfos {
@@ -76,7 +77,11 @@
     height: 2px;
     border: none;
     background-color: black;
+    transition: linear 0.2s;
 }
+/* .hrCard:hover {
+    transform: scaleX(3);
+} */
 
 .infos {
     position: relative;
