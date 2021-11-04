@@ -31,15 +31,32 @@ burgerMenu.addEventListener("click", () => {
 
 
 
-//event click pour faire apparaître l'input recherche :
+//event click pour faire apparaître Le voileRecherche :
 let btnRecherche = document.querySelector("#btnRecherche");
-let recherche = document.querySelector("#recherche");
+let voileRecherche = document.querySelector("#voileRecherche");
+let croixVoileRecherche = document.querySelector("#croixVoileRecherche");
+let inputRecherche = document.querySelector("#inputRecherche");
 
 btnRecherche.addEventListener("click", (e)=>{
     if(btnRecherche.classList == "btnRecherche") {
-        recherche.classList.remove("rechercheOff");
-        recherche.classList.add("recherche");
-        recherche.setAttribute('autofocus', 'autofocus');
+        voileRecherche.classList.remove("voileRechercheOff");
+        voileRecherche.classList.add("voileRechercheOn");
+        inputRecherche.classList.remove("inputRechercheOff");
+        inputRecherche.classList.add("inputRechercheOn");
+        croixVoileRecherche.classList.remove("croixVoileRechercheOff");
+        croixVoileRecherche.classList.add("croixVoileRechercheOn");
+        inputRecherche.setAttribute('autofocus', 'autofocus');
         e.stopPropagation();
+    }
+})
+
+croixVoileRecherche.addEventListener("click", (e)=> {
+    if(voileRecherche.classList =="voileRechercheOn") {
+        voileRecherche.classList.remove("voileRechercheOn");
+        voileRecherche.classList.add("voileRechercheOff");
+        inputRecherche.classList.remove("inputRechercheOn");
+        inputRecherche.classList.add("inputRechercheOff");
+        croixVoileRecherche.classList.remove("croixVoileRechercheOn");
+        croixVoileRecherche.classList.add("croixVoileRechercheOff");
     }
 })
