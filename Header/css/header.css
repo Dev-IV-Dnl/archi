@@ -26,7 +26,7 @@ body {
     border: none;
     font-size: 35px;
     border-radius: 5px;
-    color: var(--col5);
+    color: var(--col1);
     transition: linear 0.2s;
 }
 .btnRecherche::after {
