@@ -132,29 +132,6 @@ body {
     width: 50%;
 }
 
-/* .recherche {
-    z-index: 50;
-    position: absolute;
-    right: 70px;
-    width: 150px;
-    height: 40px;
-    color: var(--col1);
-    border: solid 2px var(--col1);
-    border-radius: 5px;
-    transition: linear 0.1s;
-}
-.rechercheOff {
-    display: none;
-}
-.recherche:focus {
-    background-color: var(--col1);
-    color: var(--col2);
-}
-.recherche:hover {
-    background-color: var(--col1);
-    color: var(--col2);
-} */
-
 .iconeMenuBurger {
     display: flex;
     justify-content: center;
