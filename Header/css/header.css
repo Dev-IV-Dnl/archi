@@ -72,9 +72,9 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #333;
+    background-color: var(--col4);
     transition: 0.2s ease-in-out;
-    opacity: 0.99;
+    opacity: 1;
 }
 .croixVoileRechercheOff {
     display: none;
@@ -241,7 +241,7 @@ body {
         display: inline;
         justify-content: center;
         align-items: center;
-        color: var(--col5);
+        color: var(--col1);
         transition: linear 0.2s;
         border-radius: 3px;
         font-size: 2rem;

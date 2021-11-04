@@ -23,7 +23,7 @@
     position: relative;
     width: 300px;
     height: 370px;
-    transition: linear 0.1s;
+    transition: 0.1s ease-in-out;
     margin-right: 30px;
     /* border: 1px solid black; */
 }
@@ -39,7 +39,7 @@
     overflow: hidden;
     border-radius: 2px;
     box-shadow: 0 0 3px var(--col1);
-    transition: linear 0.2s;
+    transition: 0.2s ease-in-out;
     /* background-image: url(../img/img-test-archi.jpg);
     background-size: cover;
     background-position: center; */
@@ -53,12 +53,12 @@
     height: 300px;
     width: 100%;
     object-fit: cover;
-    transition: linear 0.5s;
-    filter: grayscale(100%);
+    transition: 1s ease-in-out;
+    filter: sepia(50%);
 }
 .imgCard:hover {
     transform: scale(1.1);
-    filter: grayscale(0);
+    filter: sepia(0);
 }
 
 .divInfos {
@@ -79,7 +79,7 @@
     height: 2px;
     border: none;
     background-color: black;
-    transition: linear 0.2s;
+    transition: 0.2s ease-in-out;
 }
 /* .hrCard:hover {
     transform: scaleX(3);
