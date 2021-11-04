@@ -1,7 +1,10 @@
 :root {
     --col1: #333;
     --col2: #F1F1F1;
-    --col3: transparent;
+    --col3: grey;
+    --col4: black;
+    --col5: rgb(68, 68, 68);
+    --col6: transparent;
 }
 body {
     position: relative;
@@ -19,18 +22,31 @@ body {
 }
 .btnRecherche {
     position: absolute;
-    width: 45px;
-    height: 45px;
     right: 120px;
     border: none;
     font-size: 25px;
     border-radius: 5px;
+    color: var(--col5);
     transition: linear 0.2s;
+}
+.btnRecherche::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    /* width: 0%; */
+    height: 3px;
+    background: var(--col4);
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+    /* transition: width 0.2s ease-in-out; */
+}
+.btnRecherche:hover::after {
+    transform: scale(1);
 }
 .btnRecherche:hover {
     cursor: pointer;
-    background-color: var(--col1);
-    color: var(--col2);
+    color: var(--col4);
 }
 .btnRechercheOff {
     display: none;
@@ -150,22 +166,34 @@ body {
         flex-direction: row;
     }
     .nav {
-        display: flex;
+        display: inline;
         justify-content: center;
         align-items: center;
-        color: var(--col1);
+        color: var(--col5);
         transition: linear 0.3s;
-        width: 150px;
-        height: 50px;
-        background-color: var(--col2);
         border-radius: 3px;
         font-size: 2rem;
+    }
+    .nav::after {
+        content: "";
+        display: block;
+        position: absolute;
+        /* width: 100%; */
+        width: 0%;
+        height: 3px;
+        background: var(--col4);
+        /* transform: scale(0); */
+        /* transition: transform 0.2s ease-in-out; */
+        transition: width 0.2s ease-in-out;
+    }
+    .nav:hover::after {
+        /* transform: scale(1); */
+        width: 100%;
     }
     .nav:hover {
         transform: translate(0);
         text-decoration: none;
-        background-color: var(--col1);
-        color: var(--col2);
+        color: var(--col4);
     }
 }
 
