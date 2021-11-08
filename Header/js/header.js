@@ -45,7 +45,7 @@ btnRecherche.addEventListener("click", (e)=>{
         inputRecherche.classList.add("inputRechercheOn");
         croixVoileRecherche.classList.remove("croixVoileRechercheOff");
         croixVoileRecherche.classList.add("croixVoileRechercheOn");
-        inputRecherche.setAttribute('autofocus', 'autofocus');
+        inputRecherche.focus();
         e.stopPropagation();
     }
 })
