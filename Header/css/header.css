@@ -4,7 +4,9 @@
     --col3: grey;
     --col4: black;
     --col5: rgb(68, 68, 68);
-    --col6: transparent;
+    --col6: white;
+    --col7: #00a2ff;
+    --col8: transparent;
 }
 body {
     position: relative;
@@ -90,7 +92,7 @@ body {
     right: 100px;
     cursor: pointer;
     border: none;
-    background-color: var(--col6);
+    background-color: var(--col4);
 }
 .ligne1CroixVoileRecherche {
     position: absolute;
@@ -124,18 +126,70 @@ body {
     background-color: var(--col2);
 }
 
-.inputRechercheOff {
+.formRechercheOn {
+    width: 80%;
+    background: var(--col4);
+    padding: 30px;
+    overflow: hidden;
+}
+.formRechercheOn .divInput {
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+.formRechercheOn .divInput input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 25px;
+    background: var(--col4);
+    color: var(--col2);
+    border-bottom: 2px solid var(--col2);
+    font-family: sans-serif;
+    outline: none;
+}
+.formRechercheOn .divInput label {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    color: var(--col2);
+    font-size: 25px;
+    font-family: sans-serif;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+.divInput input:focus ~ label,
+.divInput input:valid ~ label {
+    transform: translateY(-30px);
+    color: var(--col7);
+    font-size: 15px;
+}
+.formRechercheOn .divInput .underline {
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 102%;
+}
+.divInput .underline:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--col7);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+.divInput input:focus ~ .underline:before,
+.divInput input:valid ~ .underline:before {
+    transform: scaleX(1);
+}
+
+.formRechercheOff {
     display: none;
 }
-.inputRechercheOn {
-    display: inline;
-    width: 80%;
-    height: 80px;
-    font-size: 40px;
-}
-::placeholder {
-    color: var(--col4);
-    font-size: 40px;
+
+.inputRechercheOff {
+    display: none;
 }
 
 .iconeMenuBurger {
@@ -200,12 +254,11 @@ body {
     margin-left: 5px;
     text-decoration: none;
     color: var(--col1);
-    font-family: fantasy;
+    font-family: sans-serif;
     font-size: 20px;
     transition: linear 0.2s;
 }
 .nav:hover {
-    font-family: fantasy;
     text-shadow: 0 0 1px var(--col4);
 }
 .nav::after {

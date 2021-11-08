@@ -35,17 +35,20 @@ burgerMenu.addEventListener("click", () => {
 let btnRecherche = document.querySelector("#btnRecherche");
 let voileRecherche = document.querySelector("#voileRecherche");
 let croixVoileRecherche = document.querySelector("#croixVoileRecherche");
+let formRecherche = document.querySelector("#formRecherche");
 let inputRecherche = document.querySelector("#inputRecherche");
 
 btnRecherche.addEventListener("click", (e)=>{
     if(btnRecherche.classList == "btnRecherche") {
         voileRecherche.classList.remove("voileRechercheOff");
         voileRecherche.classList.add("voileRechercheOn");
+        formRecherche.classList.remove("formRechercheOff");
+        formRecherche.classList.add("formRechercheOn");
         inputRecherche.classList.remove("inputRechercheOff");
         inputRecherche.classList.add("inputRechercheOn");
         croixVoileRecherche.classList.remove("croixVoileRechercheOff");
         croixVoileRecherche.classList.add("croixVoileRechercheOn");
-        inputRecherche.focus();
+        // inputRecherche.focus();
         e.stopPropagation();
     }
 })
@@ -54,6 +57,8 @@ croixVoileRecherche.addEventListener("click", (e)=> {
     if(voileRecherche.classList =="voileRechercheOn") {
         voileRecherche.classList.remove("voileRechercheOn");
         voileRecherche.classList.add("voileRechercheOff");
+        formRecherche.classList.remove("formRechercheOn");
+        formRecherche.classList.add("formRechercheOff");
         inputRecherche.classList.remove("inputRechercheOn");
         inputRecherche.classList.add("inputRechercheOff");
         croixVoileRecherche.classList.remove("croixVoileRechercheOn");

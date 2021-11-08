@@ -34,7 +34,13 @@
     </header>
     
     <div id="voileRecherche" class="voileRechercheOff">
-        <input type="text" id="inputRecherche" class="inputRechercheOff" placeholder="Recherche">
+        <div id="formRecherche" class="formRechercheoff">
+            <div class="divInput">
+                <input type="text" name="recherche" id="inputRecherche" class="inputRechercheOff" autocomplete="off" required>
+                <div class="underline"></div>
+                <label class="labelRecherche">Votre Recherche</label>
+            </div>
+        </div>
         <button id="croixVoileRecherche" class="croixVoileRechercheOff">
             <div class="ligne1CroixVoileRecherche"></div>
             <div class="ligne2CroixVoileRecherche"></div>
