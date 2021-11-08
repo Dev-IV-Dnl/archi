@@ -132,12 +132,12 @@ body {
     padding: 30px;
     overflow: hidden;
 }
-.formRechercheOn .divInput {
+.formRechercheOn .divInputRecherche {
     position: relative;
     height: 40px;
     width: 100%;
 }
-.formRechercheOn .divInput input {
+.formRechercheOn .divInputRecherche input {
     width: 100%;
     height: 100%;
     border: none;
@@ -148,7 +148,7 @@ body {
     font-family: sans-serif;
     outline: none;
 }
-.formRechercheOn .divInput label {
+.formRechercheOn .divInputRecherche label {
     position: absolute;
     bottom: 10px;
     left: 0px;
@@ -158,19 +158,19 @@ body {
     pointer-events: none;
     transition: all 0.5s ease;
 }
-.divInput input:focus ~ label,
-.divInput input:valid ~ label {
+.divInputRecherche input:focus ~ label,
+.divInputRecherche input:valid ~ label {
     transform: translateY(-30px);
     color: var(--col7);
     font-size: 15px;
 }
-.formRechercheOn .divInput .underline {
+.formRechercheOn .divInputRecherche .underline {
     position: absolute;
     bottom: -5px;
     height: 4px;
     width: 102%;
 }
-.divInput .underline:before {
+.divInputRecherche .underline:before {
     position: absolute;
     content: "";
     width: 100%;
@@ -179,8 +179,8 @@ body {
     transform: scaleX(0);
     transition: transform 0.5s ease;
 }
-.divInput input:focus ~ .underline:before,
-.divInput input:valid ~ .underline:before {
+.divInputRecherche input:focus ~ .underline:before,
+.divInputRecherche input:valid ~ .underline:before {
     transform: scaleX(1);
 }
 
