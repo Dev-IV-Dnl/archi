@@ -37,6 +37,7 @@ let voileRecherche = document.querySelector("#voileRecherche");
 let croixVoileRecherche = document.querySelector("#croixVoileRecherche");
 let formRecherche = document.querySelector("#formRecherche");
 let inputRecherche = document.querySelector("#inputRecherche");
+let labelRecherche = document.querySelector("#labelRecherche");
 
 btnRecherche.addEventListener("click", (e)=>{
     if(btnRecherche.classList == "btnRecherche") {
@@ -46,6 +47,8 @@ btnRecherche.addEventListener("click", (e)=>{
         formRecherche.classList.add("formRechercheOn");
         inputRecherche.classList.remove("inputRechercheOff");
         inputRecherche.classList.add("inputRechercheOn");
+        labelRecherche.classList.remove("labelRechercheOff");
+        labelRecherche.classList.add("labelRechercheOn");
         croixVoileRecherche.classList.remove("croixVoileRechercheOff");
         croixVoileRecherche.classList.add("croixVoileRechercheOn");
         // inputRecherche.focus();
@@ -61,7 +64,27 @@ croixVoileRecherche.addEventListener("click", (e)=> {
         formRecherche.classList.add("formRechercheOff");
         inputRecherche.classList.remove("inputRechercheOn");
         inputRecherche.classList.add("inputRechercheOff");
+        labelRecherche.classList.remove("labelRechercheOff");
+        labelRecherche.classList.add("labelRechercheOn");
         croixVoileRecherche.classList.remove("croixVoileRechercheOn");
         croixVoileRecherche.classList.add("croixVoileRechercheOff");
     }
 })
+
+//Test header qui s'enfuit en scrollant vers le bas
+let departScroll = window.pageYOffset;
+let menu = document.querySelector("#menuDown");
+let burger = document.querySelector("#iconeMenuBurger");
+
+window.onscroll = function() {
+    let currentScrollPos =  window.pageYOffset;
+
+    if(departScroll > currentScrollPos) {
+        menu.style.display = "flex";
+        burger.style.display = "flex"
+    } else {
+        menu.style.display = "none";
+        burger.style.display = "none";
+    }
+    departScroll = currentScrollPos;
+}
