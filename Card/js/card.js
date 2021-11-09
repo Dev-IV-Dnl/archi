@@ -1,5 +1,5 @@
 let card = document.querySelectorAll('.imgCard');
-
+//Filtre sur tous sauf hover :
 card.forEach(element => {
     element.addEventListener('mouseover', e => {
         card.forEach(elementHover => {
