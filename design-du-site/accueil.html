@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CSS Font Awesome-->
+    <link rel="stylesheet" href=" https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css">
+    <!--mon CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--JS Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+    <!--Mon JS-->
+    <script src="index.js" defer></script>
+    <title>A&M Architcture</title>
+</head>
+
+<body>
+    <!---------------------------------------------Header------------------------------------------>
+
+    <header id="header" class="header">
+        <div id="iconeMenuBurger" class="iconeMenuBurger">
+            <div class="ligne1Burger"></div>
+            <div class="ligne2Burger"></div>
+            <div class="ligne3Burger"></div>
+        </div>
+        <div id="menuDown" class="phoneNav">
+            <a class="nav" href="#">Accueil</a>
+            <a class="nav" href="#">Projets</a>
+            <a class="nav" href="#">Presse</a>
+            <a class="nav" href="#">Actualité</a>
+            <a class="nav" href="#">Contact</a>
+        </div>
+        <button id="btnRecherche" class="btnRecherche" href="#HDP"><i class="fas fa-search"></i></button>
+    </header>
+    <div id="voileRecherche" class="voileRechercheOff">
+        <div id="formRecherche" class="formRechercheoff">
+            <div class="divInputRecherche">
+                <input type="text" name="recherche" id="inputRecherche" class="inputRechercheOff" autocomplete="off"
+                    required>
+                <div class="underline"></div>
+                <label id="labelRecherche" class="labelRechercheOff">Votre Recherche</label>
+            </div>
+        </div>
+        <button id="croixVoileRecherche" class="croixVoileRechercheOff">
+            <div class="ligne1CroixVoileRecherche"></div>
+            <div class="ligne2CroixVoileRecherche"></div>
+        </button>
+    </div>
+
+
+
+    <!------------------------------------------Carousel-------------------------------------->
+
+    <section class="monCarousel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image:url(./img/4\ PASTEUR\ K.jpg);">
+                    <div class="carousel-caption d-none d-md-block text-end">
+                        <h1>Premier slide</h1>
+                        <h4>Description du premier slide.</h4>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image:url(./img/1\ CHRU.JPG);">
+                    <div class="carousel-caption d-none d-md-block text-end">
+                        <h1>Second slide</h1>
+                        <h4>Description du second slide.</h4>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image:url(./img/1\ PME.JPG);">
+                    <div class="carousel-caption d-none d-md-block text-end">
+                        <h1>Troisième slide</h1>
+                        <h4>Description du troisième slide.</h4>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+
+    <!------------------------------------------CARDS-------------------------------------->
+
+    <section class="tousProjets">
+        <div class="card">
+            <a href="#" class="lienCard">
+                <div class="divImg">
+                    <img class="imgCard" src="./img/img-test-archi.jpg" alt="">
+                </div>
+                <div class="divInfos">
+                    <div class="divHrCard">
+                        <hr class="hrCard">
+                    </div>
+                    <div class="infos">
+                        <span class="titreCard">Siège Opadoma</span><br>
+                        <span class="catégorieCard">Bureaux</span><br>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#" class="lienCard">
+                <div class="divImg">
+                    <img class="imgCard" src="./img/4 PASTEUR K.jpg" alt="">
+                </div>
+                <div class="divInfos">
+                    <div class="divHrCard">
+                        <hr class="hrCard">
+                    </div>
+                    <div class="infos">
+                        <span class="titreCard">Siège Opadoma</span><br>
+                        <span class="catégorieCard">Bureaux</span><br>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#" class="lienCard">
+                <div class="divImg">
+                    <img class="imgCard" src="./img/1 CHRU.JPG" alt="">
+                </div>
+                <div class="divInfos">
+                    <div class="divHrCard">
+                        <hr class="hrCard">
+                    </div>
+                    <div class="infos">
+                        <span class="titreCard">Siège Opadoma</span><br>
+                        <span class="catégorieCard">Bureaux</span><br>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#" class="lienCard">
+                <div class="divImg">
+                    <img class="imgCard" src="./img/3 FAM.jpg" alt="">
+                </div>
+                <div class="divInfos">
+                    <div class="divHrCard">
+                        <hr class="hrCard">
+                    </div>
+                    <div class="infos">
+                        <span class="titreCard">Siège Opadoma</span><br>
+                        <span class="catégorieCard">Bureaux</span><br>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#" class="lienCard">
+                <div class="divImg">
+                    <img class="imgCard" src="./img//Aérienne_F04.JPG" alt="">
+                </div>
+                <div class="divInfos">
+                    <div class="divHrCard">
+                        <hr class="hrCard">
+                    </div>
+                    <div class="infos">
+                        <span class="titreCard">Siège Opadoma</span><br>
+                        <span class="catégorieCard">Bureaux</span><br>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#" class="lienCard">
+                <div class="divImg">
+                    <img class="imgCard" src="./img/1 PME.JPG" alt="">
+                </div>
+                <div class="divInfos">
+                    <div class="divHrCard">
+                        <hr class="hrCard">
+                    </div>
+                    <div class="infos">
+                        <span class="titreCard">Siège Opadoma</span><br>
+                        <span class="catégorieCard">Bureaux</span><br>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#" class="lienCard">
+                <div class="divImg">
+                    <img class="imgCard" src="./img/1 ESAT.jpg" alt="">
+                </div>
+                <div class="divInfos">
+                    <div class="divHrCard">
+                        <hr class="hrCard">
+                    </div>
+                    <div class="infos">
+                        <span class="titreCard">Siège Opadoma</span><br>
+                        <span class="catégorieCard">Bureaux</span><br>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#" class="lienCard">
+                <div class="divImg">
+                    <img class="imgCard" src="./img/6 EHPAD.jpg" alt="">
+                </div>
+                <div class="divInfos">
+                    <div class="divHrCard">
+                        <hr class="hrCard">
+                    </div>
+                    <div class="infos">
+                        <span class="titreCard">Siège Opadoma</span><br>
+                        <span class="catégorieCard">Bureaux</span><br>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+
+    <!------------------------------------------A Propos-------------------------------------->
+
+    <section class="aPropos">
+        <div class="imageEquipe"></div>
+        <div class="equipe">
+            <h3>L'équipe :</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, modi. Cumque recusandae, ipsam suscipit
+                quasi sapiente totam nihil et rem delectus amet sequi ad expedita ratione eligendi aspernatur est
+                numquam officia aperiam pariatur fugiat, consequuntur aut consectetur iusto. Nam vero ea debitis at
+                facere blanditiis est vel eum mollitia aperiam voluptate tempora, natus a recusandae amet doloremque
+                accusamus facilis consequuntur dignissimos molestias vitae cumque eaque quibusdam dolores? Earum qui
+                recusandae veritatis fugiat consectetur cum temporibus alias perferendis aut. Officia tempore at
+                similique? Id rem quos beatae laboriosam doloribus cumque eum culpa provident, necessitatibus excepturi
+                dicta? Provident culpa aliquid error, fugit et amet ad dolor voluptates id aspernatur neque nesciunt nam
+                minus ratione, dicta animi nihil tempore exercitationem? Exercitationem, veritatis ipsum. Maxime nulla
+                aut id quidem! Qui vel dolores magnam tempora, reprehenderit iure error, iusto, eaque placeat vitae
+                tempore voluptas eveniet. Voluptatum sunt perferendis, cupiditate ad voluptates sequi laborum ipsa
+                recusandae, qui, corporis incidunt ea. Placeat accusantium, repellat facere dicta magnam eum blanditiis
+                animi, voluptates quis neque, eaque officiis non ex inventore laboriosam laudantium nam eveniet error
+                dolor totam quam. Error debitis a consequatur ipsum velit quo reprehenderit iste nisi veritatis optio
+                ducimus deserunt ea non architecto aut fugiat recusandae sapiente, alias neque hic corporis animi
+                suscipit. Explicabo laboriosam aspernatur beatae eos ipsum consequatur cupiditate rerum, adipisci ipsam
+                nulla reprehenderit maxime sapiente dolorum reiciendis corporis. Est accusantium illo consectetur
+                cumque, culpa praesentium esse, soluta quis nostrum, minima inventore quos cupiditate. Corrupti odit
+                impedit aliquid magni consectetur ullam distinctio, veniam obcaecati quisquam et voluptates neque
+                explicabo doloremque rerum, quidem, tempore necessitatibus dolore porro dolorum molestiae alias qui ex
+                saepe dolorem. Esse expedita suscipit aliquam cumque ut dignissimos perferendis iste nisi exercitationem
+                hic culpa iusto quibusdam dolore beatae fuga, et recusandae doloribus libero! Eos perspiciatis sint
+                repellat quo, ad adipisci ab tempore iure?</p>
+        </div>
+    </section>
+
+
+
+    <!------------------------------------------Actualités-------------------------------------->
+
+    <section class="sectionActu">
+        <h2>Actualités</h2>
+        <div class="accueilActu">
+            <div class="card">
+                <a href="#" class="lienCard">
+                    <div class="divImg">
+                        <img class="imgCard" src="./img/img-test-archi.jpg" alt="">
+                    </div>
+                    <div class="divInfos">
+                        <div class="divHrCard">
+                            <hr class="hrCard">
+                        </div>
+                        <div class="infos">
+                            <span class="titreCard">Siège Opadoma</span><br>
+                            <span class="catégorieCard">Bureaux</span><br>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#" class="lienCard">
+                    <div class="divImg">
+                        <img class="imgCard" src="./img/4 PASTEUR K.jpg" alt="">
+                    </div>
+                    <div class="divInfos">
+                        <div class="divHrCard">
+                            <hr class="hrCard">
+                        </div>
+                        <div class="infos">
+                            <span class="titreCard">Siège Opadoma</span><br>
+                            <span class="catégorieCard">Bureaux</span><br>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#" class="lienCard">
+                    <div class="divImg">
+                        <img class="imgCard" src="./img/1 CHRU.JPG" alt="">
+                    </div>
+                    <div class="divInfos">
+                        <div class="divHrCard">
+                            <hr class="hrCard">
+                        </div>
+                        <div class="infos">
+                            <span class="titreCard">Siège Opadoma</span><br>
+                            <span class="catégorieCard">Bureaux</span><br>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
