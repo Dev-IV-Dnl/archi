@@ -117,7 +117,7 @@ body {
 .ligne1CroixVoileRecherche {
     position: absolute;
     top: 8px;
-    width: 80%;
+    width: 90%;
     height: 10%;
     margin-bottom: 4px;
     transform-origin: left;
@@ -132,7 +132,7 @@ body {
 .ligne2CroixVoileRecherche {
     position: absolute;
     bottom: 6px;
-    width: 80%;
+    width: 90%;
     height: 10%;
     margin-top: 4px;
     transform-origin: left;
@@ -157,7 +157,7 @@ body {
 }
 
 .formRechercheOn {
-    width: 80%;
+    width: 90%;
     background: var(--col4);
     padding: 30px;
     overflow: hidden;
@@ -245,7 +245,7 @@ body {
 }
 
 .ligne1Burger {
-    width: 80%;
+    width: 90%;
     height: 10%;
     margin-bottom: 4px;
     transform-origin: left;
@@ -255,7 +255,7 @@ body {
 }
 
 .ligne2Burger {
-    width: 80%;
+    width: 90%;
     height: 10%;
     margin-top: 2px;
     margin-bottom: 3px;
@@ -264,7 +264,7 @@ body {
 }
 
 .ligne3Burger {
-    width: 80%;
+    width: 90%;
     height: 10%;
     margin-top: 4px;
     transform-origin: left;
@@ -332,7 +332,7 @@ body {
         left: 0;
         height: 100px !important;
         display: flex;
-        width: 80%;
+        width: 90%;
         /* border: 1px solid var(--col1) !important; */
         align-items: center;
         border-radius: 5px;
@@ -409,7 +409,7 @@ body {
 .monCarousel {
     margin: 0 auto;
     position: relative;
-    width: 80%;
+    width: 90%;
     height: 100vh;
 }
 
@@ -461,7 +461,7 @@ body {
 }
 
 .tousProjets {
-    width: 80%;
+    width: 90%;
     height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -469,6 +469,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     background-color: var(--col3);
+    margin-top: 10px;
 }
 
 .card {
@@ -569,11 +570,12 @@ body {
 
 .aPropos {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     height: 95vh;
     display: flex;
     justify-content: center;
     background-color: col3;
+    margin-top: 10px;
 }
 .imageEquipe {
     height: 100%;
@@ -602,18 +604,36 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: var(--col3);
-    width: 80%;
+    width: 90%;
     height: 60vh;
     padding: 20px;
+    margin-top: 10px;
 }
 .sectionActu h2 {
     margin-top: 30px;
 }
 .accueilActu {
-    width: 80%;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+
+
+/* -------------------------Footer----------------------------- */
+
+footer {
+    margin-bottom: 0px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 200px;
+    background-color: var(--col3);
+    margin-top: 10px;
 }
