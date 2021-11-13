@@ -105,5 +105,3 @@ card.forEach(element => {
         });
     });
 });
-
-
