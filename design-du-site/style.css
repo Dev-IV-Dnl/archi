@@ -17,6 +17,7 @@ body {
     position: relative;
     background-color: var(--col2);
     margin: 0;
+    padding: 0;
 }
 
 /* -------------------------HEADER----------------------------- */
@@ -328,12 +329,11 @@ body {
     }
     #menuDown {
         position: fixed;
-        top: -245px;
+        top: -250px;
         left: 0;
         height: 100px !important;
         display: flex;
         width: 90%;
-        /* border: 1px solid var(--col1) !important; */
         align-items: center;
         border-radius: 5px;
         transition: linear 0.2s;
